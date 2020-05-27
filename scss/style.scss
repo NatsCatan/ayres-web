@@ -25,7 +25,7 @@ div{
     padding: 0 4px;
    
   }
-  .columnaimg{
+  .columna img{
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
@@ -57,17 +57,28 @@ div{
 .articulo3{
     grid-area: articulo3;
 }
-  #imagen{
-      width: 350px;
+ 
+@media screen and (max-width:900px){
+  .grid{
+    display: inline;
   }
-  #imagen-probl{
-      width: 250px;
+  .grid img{
+    width: 100%;
   }
-  #redes-sociales {
-    width: 25px;
-    height: 25px;
+  .grid video{
+    width: 100%;
+  }
+  
+}
+.redes-sociales{
+  width: 25px;
+    img:hover {
+    animation: flip;
+    animation-duration: 2s;
+  }
   }
   .vuelta-img{
+    width: 300px;
       transition: all 1s ease-in-out 0s;
       -webkit-transition: all 1s ease-in-out 0s;
       -moz-transition: all 1s ease-in-out 0s;
@@ -82,7 +93,8 @@ div{
         -ms-transform:rotate(-10deg) scale(1.2);
     }
   #logo{
-    @include fonts('Nanum Brush Script',35px);
+    @include fonts('Nanum Brush Script',30px);
+    text-transform: uppercase;
   }
   body{
     box-sizing: border-box;
@@ -120,6 +132,11 @@ div{
     }
  
 }
+@media screen and (max-width:900px){
+  .menu-clases {
+    display: none;
+  }
+}
 .clases {
     margin-left: 10px;
     margin-right: 20px;
@@ -131,6 +148,14 @@ div{
     } 
        } 
  
+}
+@media screen and(max-width:900px){
+  .clases section{
+    display: inline;
+  }
+  .clases img{
+    width: 100%;
+  }
 }   
 .color{
     background-color: $color-bg;
@@ -138,6 +163,7 @@ div{
   span{
     text-transform: uppercase;
     font-size: 50px;
+    color: #06623b;
   }
   .contenido{
     max-width: 1170px;
@@ -207,11 +233,14 @@ div{
     width: 100%;
     padding: .7em;
     border: none;
-    background: none;
+    background:none;
     outline: none;
     color: #101010;
     border-bottom: 1px solid #c7c7c7;
   }
+  .form-contacto form button{
+    background: #94d3ac;
+    }
   .form-contacto form button:hover,
   .form-contacto form button:focus{
     background: #655c56;
@@ -220,14 +249,29 @@ div{
     outline: 0;
   }
   .info-contacto {
+    font-size: 18px;
     background: #655c56;
     color: #94d3ac;
-    padding: 80px;
+    padding: 70px;
     h4, ul, p{
     text-align: center;
     margin: 0 0 1rem 0;
   }
+  h4, p{
+    font-size: 22px;
   }
+  }
+  @media screen and (max-width: 1100px){
+    .contenido-envol{
+      flex-wrap: wrap;
+    }
+    .form-contacto{
+      max-width: 100%;
+    }
+    .info-contacto{
+      display: none;
+    }
+  } 
     footer{
     width: 100%;
     background: #202020;
@@ -247,12 +291,12 @@ div{
     max-width: 300px;
   }
   .footer-col1 h1{
-    @include fonts('Cormorant Infant', 30px);   
+    margin-top: 15px; 
     margin-left: 10px;
     color: #c7c7c7;
   }
   .footer-col1 p {
-    font-size: 15px;
+    font-size: 18px;
     color: #c7c7c7;
     margin-top: 20px;
   }
@@ -265,18 +309,19 @@ div{
     color: #c7c7c7;
   }
   .footer-col2 .row{
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     display: flex;
   }
   .footer-col2 .row img{
     width: 25px;
     height: 25px;
-  }
+   }
+      
   .footer-col2 label{
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 15px;
     color: #c7c7c7;
   }
   .footer-col3 {
@@ -308,7 +353,7 @@ div{
   .informacion-footer a{
     text-decoration: none;
     color: #C7C7C7;
-  }
+   }
   @media screen and (max-width: 1100px){
     .footer-body{
       flex-wrap: wrap;

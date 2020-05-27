@@ -11,19 +11,19 @@
         <!--FONT AWESOME LINK-->
         <script src="https://kit.fontawesome.com/4db7ab89bc.js" crossorigin="anonymous"></script>
         <!--ANIMATED CSS LINK-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
         <!--LINKS RESET, BOOTSTRAP Y CSS-->
         <link rel="reset" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
-        <title>- Español en Palermo -Quienes Somos</title>
+        <title>Español en Palermo -Quienes Somos</title>
     </head>
     <body>
             <header>
                 <!--Barra de navegación-->
                 <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                    <span class="navbar-brand mb-0 h1 text-primary text-success" id="logo">Espa<span>ñ</span>ol en Palermo</span>
+                    <a class="nav-link" href="inicio.html"><span class="navbar-brand mb-0 h1 text-primary text-success" id="logo">Espa<span>ñ</span>ol en Palermo</span></a>
                     <div class= "collpase navbar-nav" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -34,8 +34,8 @@
                                     Nuestra escuela
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="quienes-somos.html">Quienes Somos</a>
-                                    <a class="dropdown-item" href="donde-estamos.html">Donde estamos</a>
+                                    <a class="dropdown-item active" href="quienes-somos.html">Quiénes Somos</a>
+                                    <a class="dropdown-item" href="donde-estamos.html">Dónde estamos</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -50,20 +50,23 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="blog.html">Blog</a>
                             </li>
-                            <li class="nav-link">
-                                <a class="nav-link" href="https:www.facebook.com/ayresdespanol/"><img src="images/facebook.png" alt="icono de facebook" id="redes-sociales"/> </a>
-
+                            <li class="nav-link ml-1 mr-1">
+                                <div class="redes-sociales">
+                                <a class="nav-link" href="https:www.facebook.com/ayresdespanol/" target="_blank"><img src="images/facebook.png" alt="icono de facebook"/> </a>
+                            </div>
                             </li>
-                            <li class="nav-link">
-                                <a class="nav-link" href="https://www.instagram.com/ayresdeespanol/"><img src="images/instagram.png" alt="icono de instagram" id="redes-sociales"/></a>
-
+                            <li class="nav-link  ml-1 mr-1">
+                                <div class="redes-sociales">
+                                <a class="nav-link" href="https://www.instagram.com/ayresdeespanol/" target="_blank"><img src="images/instagram.png" alt="icono de instagram"/></a>
+                            </div>
                             </li>
-                            <li class="nav-link">
-                            <a class="nav-link" href="https://www.pinterest.es/ayresdeespanol/"><img src="images/pinterest_icon-icons.com_66097.png" alt="icono de pinterest" id="redes-sociales"/></a>
-
+                            <li class="nav-link  ml-1 mr-1">
+                                <div class="redes-sociales">
+                            <a class="nav-link" href="https://www.pinterest.es/ayresdeespanol/" target="_blank"><img src="images/pinterest_icon-icons.com_66097.png" alt="icono de pinterest"/></a>
+                            </div>
                         </li>
-                            <li class="nav-link">
-                                <a class="btn btn-success" href="contact.html" role="button">Contacto</a>
+                            <li class="nav-link  ml-1 mr-1">
+                                <a class="btn btn-lg btn-success" href="contact.html" role="button">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -74,10 +77,10 @@
             <!--Submenú interno-->
             <div class="menu-clases">
                 <ol>
-                    <li><a href="#somos">Quienes Somos</a></li>
-                    <li>|</li>
+                    <li><a href="#somos">Quiénes Somos</a></li>
+                    <li></li>
                     <li><a href="#metodologia"> Metodología</a></li>
-                    <li>|</li>
+                    <li></li>
                     <li><a href="#testimonios"> Testimonios de nuestros alumnos</a></li>
                 </ol>
             </div>
@@ -99,24 +102,26 @@
                
             <div class="fila">
                     <div class="columna">
-                            <img src="images/horror.jpg" alt="imagen de escritorio" id="imagen">
+                            <img src="images/laudos.jpeg" alt="imagen de personas" class="img-fluid">                      
+
+                            <img src="images/online-alyona.jpeg" alt="clase online" class="img-fluid">
                                                
-                            <img src="images/yani.jpg" alt="imagen de personas" id="imagen-probl">
+                            <img src="images/mapa.jpg" alt="imagen de personas" class="img-fluid">                        
                             
-                            <img src="images/online-aly.png" alt="imagen de personas" id="imagen">
                     </div>        
                     <div class="columna">
-                            <img src="images/lau.jpg" alt="imagen de personas" id="imagen">
+                            <img src="images/trabajando.jpg" alt="imagen de personas" class="img-fluid">
 
-                            <img src="images/trabajando.jpg" alt="imagen de personas" id="imagen">
-                    
-                                                                      
-                            <img src="images/buenos-aires.jpg" alt="imagen de personas" id="imagen">
+                            <img src="images/horror.jpeg" alt="imagen de escritorio" class="img-fluid">
+
+                            <img src="images/yani2.jpeg" alt="personas abrazadas" class="img-fluid">
+                                                                                       
+                            
                     </div>   
                     <div class="columna">
-                        <img src="images/allison.jpg" alt="imagen de escritorio" id="imagen">
+                        <img src="images/allison.jpg" alt="persona trabajando" class="img-fluid">
                                            
-                        <img src="images/EFÍMERO.png" alt="imagen de escritorio" id="imagen">                
+                        <img src="images/efimero.png" alt="frase" class="img-fluid">                
                         
                     </div>
                    
@@ -132,8 +137,8 @@
                     <div class="col text-lg-center">
                         <h2>MCER</h2>
                         <p>En nuestro instituto usamos el estándar europeo de referencia de lenguas, conocido como MCER (Marco
-                            Común Europeo de Referencia para las lenguas). Este marco sirve para medir el nidel de comprensión y
-                            expresión oral y escrita de los estudiantes en la lengua seleccionada. Examenes como el DELE (Diploma de Español
+                            Común Europeo de Referencia para las lenguas). Este marco sirve para medir el nivel de comprensión y
+                            expresión oral y escrita de los estudiantes en la lengua seleccionada. Exámenes como el DELE (Diploma de Español
                             como lengua extranjera), se basan en este marco para dividir los conocimientos que los estudiantes deben manejar en cada
                             nivel. Los niveles del MCER son:
                         
@@ -144,15 +149,15 @@
                             <li>NIVEL C (avanzado): C1- C2</li>
                         </ul>
                         <p>
-                            En la entrevista que brindamos a los estudiantes antes de comenzar las clases, la coordinadora, que es docente de español, nivela a los
-                            estudiantes teniendo en cuenta el Marco para que el docente y el estudiante tengan una idea previa desde donde partir.
+                            En la entrevista que brindamos a los estudiantes antes de comenzar las clases, la coordinadora, que es graduada en español
+                            como lengua extranjera, nivela a los estudiantes teniendo en cuenta el Marco para que el docente y el alumno tengan una idea previa desde donde partir.
                             Si querés saber más sobre el MCER, te invitamos a visitar esta <a href="https://cvc.cervantes.es/ensenanza/biblioteca_ele/marco/cvc_mer.pdf">
                             página</a> del Instituto Cervantes. 
                         </p>
                     </div>
                     <div class="col text-lg-center">
                         <h2>Material de estudio</h2>
-                        <p>El materia del estudio con el que trabajamos es seleccionado teniendo en cuenta las necesidades de los estudiantes. De todas maneras,
+                        <p>El material de estudio con el que trabajamos es seleccionado teniendo en cuenta las necesidades de los estudiantes. De todas maneras,
                             nuestras clases siguen el método comunicativo, ya que el punto al que mas atención le ponemos es a la capacidad de comunicarse que esperamos
                             los estudiantes consigan en nuestras clases. En este enfoque, el punto de inflexión es la importancia que tiene la interacción como medio y objetivo 
                             primordial en el aprendizaje y enseñanza de una lengua. </p>  
@@ -206,7 +211,7 @@
                 <div class="footer-container-all">
                     <div class="footer-body">
                         <div class="footer-col1">
-                            <h1>Español en Palermo Soho</h1>
+                            <h1 id="logo">Espa<span>ñ</span>ol en Palermo</h1>
                             <p>
                                 We are a intimate spanish institute, 
                                 and we offer classes all around the city, walking and learning about Buenos Aires, our culture
@@ -217,16 +222,25 @@
                         <div class="footer-col2">
                             <h1>Our Social Media</h1>
                             <div class="row">
+                                <div class="redes-sociales">
+                                <a class="nav-link" href="https:www.facebook.com/ayresdespanol/" target="_blank">
                                 <img src="images/facebook.png">
-                                <label>Follow us on facebook</label>
+                                </div>
+                                <label>Follow us on facebook</label></a>
                             </div>
                             <div class="row">
+                                <div class="redes-sociales">
+                                <a class="nav-link" href="https://www.instagram.com/ayresdeespanol/" target="_blank">
                                 <img src="images/instagram.png">
-                                <label>Follow us on instagram</label>
+                                </div>
+                                <label>Follow us on instagram</label></a>
                             </div>
                             <div class="row">
+                                <div class="redes-sociales">
+                                <a class="nav-link" href="https://www.pinterest.es/ayresdeespanol/" target="_blank">
                                 <img src="images/pinterest_icon-icons.com_66097.png">
-                                <label>Follow us in pinterest</label>
+                                </div>
+                                <label>Follow us in pinterest</label></a>
                             </div>
                         </div>
                         <div class="footer-col3">
